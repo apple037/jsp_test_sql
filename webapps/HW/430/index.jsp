@@ -14,7 +14,7 @@
     Class.forName(driver).newInstance();
     con = DriverManager.getConnection(url,user,pwd);
     stmt = con.createStatement();
-    String sql = "select * from travel_5; ";
+    String sql = "select * from travel; ";
     rs = stmt.executeQuery(sql);
   }catch(Exception ex){
     out.println(ex);
